@@ -1,12 +1,12 @@
 #Sign In App
 
-####AngularJS Assessment for Epicodus, 04.24.2015
+#####AngularJS Assessment for Epicodus, 04.24.2015
 
 ###By Kyle K Bulloch
 
 ##Description
 
-This app tracks who is signed in for a small classroom.  Students click a button to sign in/sign out, and a list for who is present and absent is presented.  This app is an exercise in AngularJS controllers, factories, and UI-Routes.
+This app tracks who is signed in for a small classroom.  Students click a button to sign in/sign out, and a list for who is present and absent is presented.  Teachers can add and delete students.  This app is an exercise in AngularJS controllers, factories, and UI-Routes.
 
 ##Setup
 
