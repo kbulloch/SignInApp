@@ -24,6 +24,11 @@ signInApp.factory('AttendenceFactory', function AttendenceFactory() {
     factory.students.splice(index, 1);
   }
 
+  factory.addStudent = function(student_name) {
+    var new_student = { name: student_name, signed_in: false };
+    factory.students.push(new_student);
+  }
+
   return factory;
 
 });
