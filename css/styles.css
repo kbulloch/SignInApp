@@ -1,3 +1,37 @@
+html {
+}
+
+.container {
+  color: white;
+  opacity: 1;
+}
+
+.navbar {
+  margin-top: 3%;
+  /*background: none;*/
+  border: none;
+}
+
+body {
+  background: black;
+}
+
+body::after {
+  content: "";
+  background-image: url('../img/mountain.jpg');
+  opacity: .7;
+  top: -200;
+  left: -50;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.jumbotron {
+  background: none;
+}
+
 ul {
   list-style-type: none;
 }

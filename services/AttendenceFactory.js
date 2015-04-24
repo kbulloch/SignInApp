@@ -13,7 +13,7 @@ signInApp.factory('AttendenceFactory', function AttendenceFactory() {
     { name: "Balthor Hammersmith", signed_in: false },
     { name: "Beardly Ericsson", signed_in: false },
     { name: "Usef Darkheart", signed_in: false },
-    { name: "Red Foreman", signed_in: false },
+    { name: "Amon Amarth", signed_in: false },
     { name: "Slappy", signed_in: false },
     { name: "Smooty McCoodle", signed_in: false },
     { name: "Morewood Graybles", signed_in: false }
