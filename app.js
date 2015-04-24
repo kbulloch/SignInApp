@@ -7,15 +7,9 @@ signInApp.config(function($stateProvider) {
     templateUrl: 'partials/home.html'
   });
 
-  $stateProvider.state('sign_in', {
-    url: 'sign_in',
-    templateUrl: 'partials/sign_in.html',
-    controller: 'PresenceCtrl'
-  });
-
-  $stateProvider.state('presence', {
-    url: 'presence',
-    templateUrl: 'partials/presence.html',
+  $stateProvider.state('attendence_sheet', {
+    url: 'attendence_sheet',
+    templateUrl: 'partials/attendence_sheet.html',
     controller: 'PresenceCtrl'
   });
 
