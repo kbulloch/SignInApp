@@ -1,15 +1,20 @@
-<h3>Students List</h3>
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Students List</h3>
 
-<ul>
-  <li ng-repeat="item in students">
-    {{ item.name }}
-    <button ng-click="deleteStudent(item)" class="btn btn-warning btn-xs">Delete</button>
-  </li>
-</ul>
+    <ul>
+      <li ng-repeat="item in students">
+        {{ item.name }}
+        <button ng-click="deleteStudent(item)" class="btn btn-warning btn-xs">Delete</button>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-6">
+    <h3>Add new student</h3>
 
-<h3>Add new student</h3>
-
-<form ng-submit="addStudent()" class="form-inline" role="form">
-  <input type="text" ng-model="student_name" required>
-  <button type="submit" class="btn btn-primary">Add</button>
-</form>
+    <form ng-submit="addStudent()" class="form-inline" role="form">
+      <input type="text" ng-model="student_name" class="form-control" required>
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+  </div>
+</div>

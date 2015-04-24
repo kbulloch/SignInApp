@@ -8,8 +8,8 @@ html {
 
 .navbar {
   margin-top: 3%;
-  /*background: none;*/
-  border: none;
+  background: none;
+  border: 1px solid white;
 }
 
 body {
@@ -34,6 +34,7 @@ body::after {
 
 ul {
   list-style-type: none;
+  text-align: left;
 }
 
 input {
