@@ -1,13 +1,35 @@
-<h3>Student sign in </h3>
+<div class="row">
+  <div class="col-sm-6">
+    <h3>Student sign in </h3>
 
-<ul>
-  <li ng-repeat="item in students">
-    {{ item.name }}
-    <button ng-click="signIn(item)" ng-show="!item.signed_in" class="btn btn-success btn-xs">
-      Sign in
-    </button>
-    <button ng-click="signOut(item)" ng-show="item.signed_in" class="btn btn-default btn-xs">
-      Sign out
-    </button>
-  </li>
-</ul>
+    <ul>
+      <li ng-repeat="item in students">
+        {{ item.name }}
+        <button ng-click="signIn(item)" ng-show="!item.signed_in" class="btn btn-success btn-xs">
+          Sign in
+        </button>
+        <button ng-click="signOut(item)" ng-show="item.signed_in" class="btn btn-default btn-xs">
+          Sign out
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-6">
+    <h3>Present</h3>
+
+    <ul>
+      <li ng-repeat="item in filtered = (students | filter:{signed_in:true})">
+        {{ item.name }}
+      </li>
+    </ul>
+
+    <h3>Absent</h3>
+
+    <ul>
+      <li ng-repeat="item in filtered = (students | filter:{signed_in:false})">
+        {{ item.name }}
+      </li>
+    </ul>
+
+  </div>
+</div>
