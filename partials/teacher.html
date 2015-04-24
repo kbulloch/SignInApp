@@ -1,0 +1,8 @@
+<h3>Students List</h3>
+
+<ul>
+  <li ng-repeat="item in students">
+    {{ item.name }}
+    <button ng-click="deleteStudent(item)" class="btn btn-warning btn-xs">Delete</button>
+  </li>
+</ul>

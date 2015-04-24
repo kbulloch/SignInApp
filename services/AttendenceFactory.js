@@ -19,6 +19,11 @@ signInApp.factory('AttendenceFactory', function AttendenceFactory() {
     { name: "Morewood Graybles", signed_in: false }
   ];
 
+  factory.deleteStudent = function(student) {
+    var index = factory.students.indexOf(student);
+    factory.students.splice(index, 1);
+  }
+
   return factory;
 
 });

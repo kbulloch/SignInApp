@@ -3,10 +3,12 @@ signInApp.controller('StudentsCtrl', function StudentsCtrl($scope, AttendenceFac
   $scope.AttendenceFactory = AttendenceFactory;
   $scope.students = AttendenceFactory.students;
 
-  $scope.addStudent = function(student) {
-  };
+  // $scope.addStudent = function(student) {
+  //   AttendenceFactory.addStudent(student); //probably needs more params
+  // };
 
   $scope.deleteStudent = function(student) {
+    AttendenceFactory.deleteStudent(student);
   };
 
 });
