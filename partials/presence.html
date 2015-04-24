@@ -1,0 +1,11 @@
+<h3>Present</h3>
+
+<ul>
+  <li ng-repeat="item in filtered = (students | filter:{signed_in:true})">{{ item.name }}</li>
+</ul>
+
+<h3>Absent</h3>
+
+<ul>
+  <li ng-repeat="item in filtered = (students | filter:{signed_in:false})">{{ item.name }}</li>
+</ul>

@@ -13,4 +13,10 @@ signInApp.config(function($stateProvider) {
     controller: 'StudentsCtrl'
   });
 
+  $stateProvider.state('presence', {
+    url: 'presence',
+    templateUrl: 'partials/presence.html',
+    controller: 'PresenceCtrl'
+  });
+
 });
