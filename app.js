@@ -10,7 +10,7 @@ signInApp.config(function($stateProvider) {
   $stateProvider.state('sign_in', {
     url: 'sign_in',
     templateUrl: 'partials/sign_in.html',
-    controller: 'StudentsCtrl'
+    controller: 'PresenceCtrl'
   });
 
   $stateProvider.state('presence', {
