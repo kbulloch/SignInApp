@@ -1,8 +1,6 @@
-signInApp.controller('StudentsCtrl', function StudentsCtrl($scope) {
+signInApp.controller('StudentsCtrl', function StudentsCtrl($scope, AttendenceFactory) {
 
-  $scope.students = [
-    { name: "Smicky McKraken" },
-    { name: "Francis Baconshire" }
-  ];
+  $scope.AttendenceFactory = AttendenceFactory;
+  $scope.students = AttendenceFactory.students;
 
 });
