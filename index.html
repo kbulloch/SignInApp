@@ -11,6 +11,13 @@
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <button ui-sref="home" class="btn btn-default navbar-btn">Home</button>
+      <button ui-sref="sign_in" class="btn btn-default navbar-btn">Sign In</button>
+      <button ui-sref="presence" class="btn btn-default navbar-btn">Presence</button>
+    </div>
+  </nav>
   <div class="container">
     <div ui-view></div>
   </div>
