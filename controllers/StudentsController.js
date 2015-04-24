@@ -3,4 +3,8 @@ signInApp.controller('StudentsCtrl', function StudentsCtrl($scope, AttendenceFac
   $scope.AttendenceFactory = AttendenceFactory;
   $scope.students = AttendenceFactory.students;
 
+  $scope.signIn = function(student) {
+    student.signed_in = true;
+  };
+
 });

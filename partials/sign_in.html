@@ -1,5 +1,8 @@
 <h3>Student sign in </h3>
 
 <ul>
-  <li ng-repeat="item in students">{{ item.name }}</li>
+  <li ng-repeat="item in students">
+    {{ item.name }}
+    <button ng-click="signIn(item)" ng-show="!item.signed_in" class="btn btn-success btn-xs">Sign in</button>
+  </li>
 </ul>
