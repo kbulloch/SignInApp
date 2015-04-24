@@ -7,4 +7,8 @@ signInApp.controller('StudentsCtrl', function StudentsCtrl($scope, AttendenceFac
     student.signed_in = true;
   };
 
+  $scope.signOut = function(student) {
+    student.signed_in = false;
+  };
+
 });
