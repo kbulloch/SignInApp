@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row"  ng-show="students.length">
   <div class="col-sm-6">
     <h3>Student sign in </h3>
 
@@ -32,4 +32,8 @@
     </ul>
 
   </div>
+</div>
+
+<div ng-show="!students.length">
+    <h3>There are no students</h3>
 </div>
